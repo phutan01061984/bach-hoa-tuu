@@ -1,4 +1,15 @@
 /* ===== Bách Hoa Tửu Landing Page — Script ===== */
+
+// Image helpers — bound to global so inline onload/onerror can call them.
+// `imgOk` marks the photo as loaded -> CSS fades it in and hides .css-fallback sibling.
+// `imgFail` removes the broken <img> so the .css-fallback (or gallery placeholder) shows.
+window.imgOk = function (img) { img.classList.add('is-loaded'); };
+window.imgFail = function (img) {
+  var fig = img.closest('.gallery__item');
+  if (fig) fig.classList.add('img-missing');
+  img.remove();
+};
+
 (function () {
   'use strict';
 
