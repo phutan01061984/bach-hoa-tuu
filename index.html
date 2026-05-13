@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bách Hoa Tửu – Tinh Hoa Thảo Mộc Việt Nam</title>
+  <meta name="description" content="Rượu Bách Hoa Tửu – Kết tinh từ hơn 60 loại thảo mộc quý hiếm. Hương thơm dịu, vị êm, không đau đầu. Đặt hàng ngay!">
+  <meta property="og:title" content="Bách Hoa Tửu – Tinh Hoa Thảo Mộc Việt Nam">
+  <meta property="og:description" content="Hơn 60 vị thảo mộc quý. Hương thơm dịu, vị êm, không đau đầu.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Age Gate -->
+  <div id="age-gate" class="age-gate">
+    <div class="age-gate__card">
+      <div class="age-gate__icon">🍶</div>
+      <h2>Xác nhận độ tuổi</h2>
+      <p>Bạn đã đủ 18 tuổi chưa?</p>
+      <div class="age-gate__buttons">
+        <button id="age-yes" class="btn btn--primary">Đã đủ 18 tuổi</button>
+        <button id="age-no" class="btn btn--outline">Chưa đủ tuổi</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating CTA -->
+  <a href="https://zalo.me/0923177091" id="floating-cta" class="floating-cta" target="_blank" rel="noopener">
+    <span class="floating-cta__pulse"></span>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    <span class="floating-cta__text">Đặt hàng ngay</span>
+  </a>
+
+  <!-- Nav -->
+  <nav id="navbar" class="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__logo"><span class="navbar__logo-icon">🌿</span><span>Bách Hoa Tửu</span></a>
+      <ul class="navbar__links" id="nav-links">
+        <li><a href="#story">Câu chuyện</a></li>
+        <li><a href="#products">Sản phẩm</a></li>
+        <li><a href="#process">Quy trình</a></li>
+        <li><a href="#testimonials">Đánh giá</a></li>
+      </ul>
+      <a href="tel:0923177091" class="btn btn--primary btn--sm navbar__cta">Gọi ngay</a>
+      <button id="menu-toggle" class="navbar__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero__particles" id="particles"></div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="hero__tag">✦ Tinh hoa thảo mộc Việt</p>
+        <h1 class="hero__title">Bách Hoa<br>Tửu</h1>
+        <p class="hero__subtitle">Kết tinh từ <strong>hơn 60 vị thảo mộc quý</strong>, ngâm ủ theo bí truyền cổ phương. Hương thơm dịu dàng, vị êm mượt, uống không đau đầu.</p>
+        <div class="hero__actions">
+          <a href="tel:0923177091" class="btn btn--primary btn--lg" id="hero-cta">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Đặt hàng: 092 3177 091
+          </a>
+          <a href="#products" class="btn btn--ghost btn--lg">Xem sản phẩm ↓</a>
+        </div>
+        <div class="hero__trust">
+          <div class="hero__trust-item">
+            <span class="hero__trust-number" data-count="60">0</span>+
+            <span class="hero__trust-label">Vị thảo mộc</span>
+          </div>
+          <div class="hero__trust-divider"></div>
+          <div class="hero__trust-item">
+            <span class="hero__trust-number" data-count="5000">0</span>+
+            <span class="hero__trust-label">Khách hài lòng</span>
+          </div>
+          <div class="hero__trust-divider"></div>
+          <div class="hero__trust-item">
+            <span class="hero__trust-number" data-count="100">0</span>%
+            <span class="hero__trust-label">Tự nhiên</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__bottle">
+          <div class="hero__bottle-glow"></div>
+          <div class="hero__bottle-shape">
+            <div class="hero__bottle-cap"></div>
+            <div class="hero__bottle-neck"></div>
+            <div class="hero__bottle-body">
+              <div class="hero__bottle-label">
+                <span class="hero__bottle-label-top">百花酒</span>
+                <span class="hero__bottle-label-name">BÁCH HOA TỬU</span>
+                <span class="hero__bottle-label-sub">Premium Herbal Liquor</span>
+                <span class="hero__bottle-label-vol">500ml · 22% vol</span>
+              </div>
+              <div class="hero__bottle-liquid"></div>
+            </div>
+          </div>
+          <!-- floating herbs -->
+          <div class="hero__herb hero__herb--1">🌿</div>
+          <div class="hero__herb hero__herb--2">🫚</div>
+          <div class="hero__herb hero__herb--3">🌸</div>
+          <div class="hero__herb hero__herb--4">⭐</div>
+          <div class="hero__herb hero__herb--5">🔴</div>
+          <div class="hero__herb hero__herb--6">🍂</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll"><span>Khám phá</span><div class="hero__scroll-line"></div></div>
+  </section>
+
+  <!-- USP Strip -->
+  <section class="usp-strip">
+    <div class="container">
+      <div class="usp-strip__grid">
+        <div class="usp-strip__item"><div class="usp-strip__icon">🌿</div><div><strong>100% Thảo Mộc</strong><br>Tự nhiên, không hóa chất</div></div>
+        <div class="usp-strip__item"><div class="usp-strip__icon">🏺</div><div><strong>Hạ Thổ Truyền Thống</strong><br>Ủ chôn dưới đất 6 tháng</div></div>
+        <div class="usp-strip__item"><div class="usp-strip__icon">🍶</div><div><strong>Nếp Cái Hoa Vàng</strong><br>Rượu nền tinh khiết</div></div>
+        <div class="usp-strip__item"><div class="usp-strip__icon">💆</div><div><strong>Không Đau Đầu</strong><br>Uống êm, tỉnh nhanh</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section id="story" class="story">
+    <div class="container story__inner">
+      <div class="story__visual reveal-left">
+        <div class="story__art">
+          <div class="story__art-jar">🏺</div>
+          <div class="story__art-herbs">
+            <span>🌿</span><span>🫚</span><span>🌸</span><span>🍂</span><span>⭐</span><span>🔴</span>
+          </div>
+          <div class="story__art-text">Bí truyền<br>cổ phương</div>
+        </div>
+      </div>
+      <div class="story__content reveal-right">
+        <p class="section-tag">Câu chuyện thương hiệu</p>
+        <h2 class="section-title">Bí Truyền Từ<br>Những Lương Y Xưa</h2>
+        <p>Bách Hoa Tửu không chỉ là rượu — đó là tinh hoa y học cổ truyền được chắt lọc qua nhiều thế hệ. Mỗi giọt rượu là sự kết hợp hài hòa của <strong>hơn 60 loại thảo mộc quý hiếm</strong>, từ sâm, kỷ tử, đương quy đến dâm dương hoắc, ba kích.</p>
+        <p>Rượu được nấu thủ công từ nếp cái hoa vàng, ngâm ủ cùng thảo dược theo công thức cổ phương, rồi <strong>hạ thổ</strong> — chôn dưới lòng đất — để hương vị trở nên tròn đầy, êm dịu một cách tự nhiên.</p>
+        <div class="story__highlight">
+          <div class="story__highlight-item"><span class="story__highlight-num">22°</span><span>Nồng độ vừa phải</span></div>
+          <div class="story__highlight-item"><span class="story__highlight-num">6 tháng</span><span>Hạ thổ tối thiểu</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="products">
+    <div class="container">
+      <p class="section-tag text-center">Bộ sưu tập</p>
+      <h2 class="section-title text-center">Sản Phẩm Nổi Bật</h2>
+      <div class="products__grid">
+        <div class="product-card reveal-up">
+          <div class="product-card__badge">Bán chạy</div>
+          <div class="product-card__image">
+            <div class="product-card__bottle product-card__bottle--round">
+              <div class="pcb__cap"></div><div class="pcb__neck"></div>
+              <div class="pcb__body"><span>百花酒</span><small>Chai Tròn</small></div>
+            </div>
+          </div>
+          <div class="product-card__info">
+            <h3>Bách Hoa Tửu — Chai Tròn</h3>
+            <p class="product-card__desc">Thiết kế cổ điển, sang trọng. Phù hợp làm quà biếu tặng.</p>
+            <div class="product-card__meta"><span class="product-card__volume">500ml</span><span class="product-card__abv">22% vol</span></div>
+            <div class="product-card__price"><span class="product-card__price-current">220.000₫</span></div>
+            <a href="tel:0923177091" class="btn btn--primary btn--block">Đặt mua ngay</a>
+          </div>
+        </div>
+        <div class="product-card product-card--featured reveal-up">
+          <div class="product-card__badge product-card__badge--gold">Premium</div>
+          <div class="product-card__image">
+            <div class="product-card__bottle product-card__bottle--square">
+              <div class="pcb__cap"></div><div class="pcb__neck"></div>
+              <div class="pcb__body"><span>百花酒</span><small>Chai Vuông</small></div>
+            </div>
+          </div>
+          <div class="product-card__info">
+            <h3>Bách Hoa Tửu — Chai Vuông</h3>
+            <p class="product-card__desc">Phiên bản cao cấp, hương vị đậm đà, tặng kèm hộp quà.</p>
+            <div class="product-card__meta"><span class="product-card__volume">500ml</span><span class="product-card__abv">22% vol</span></div>
+            <div class="product-card__price"><span class="product-card__price-current">250.000₫</span></div>
+            <a href="tel:0923177091" class="btn btn--primary btn--block">Đặt mua ngay</a>
+          </div>
+        </div>
+        <div class="product-card reveal-up">
+          <div class="product-card__badge">Tiết kiệm</div>
+          <div class="product-card__image">
+            <div class="product-card__bottle product-card__bottle--pack">
+              <div class="pcb__mini">🍶</div><div class="pcb__mini">🍶</div>
+              <div class="pcb__mini">🍶</div><div class="pcb__mini">🍶</div>
+              <small>Lốc 4 chai</small>
+            </div>
+          </div>
+          <div class="product-card__info">
+            <h3>Bách Hoa Tửu — Lốc 4 Chai</h3>
+            <p class="product-card__desc">Gói tiết kiệm 4 chai nhựa 250ml, tiện lợi cho gia đình.</p>
+            <div class="product-card__meta"><span class="product-card__volume">4 × 250ml</span><span class="product-card__abv">22% vol</span></div>
+            <div class="product-card__price"><span class="product-card__price-current">300.000₫</span></div>
+            <a href="tel:0923177091" class="btn btn--primary btn--block">Đặt mua ngay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="process">
+    <div class="container">
+      <p class="section-tag text-center">Quy trình sản xuất</p>
+      <h2 class="section-title text-center">Nghệ Thuật Tạo Nên Từng Giọt Rượu</h2>
+      <div class="process__timeline">
+        <div class="process__step reveal-up"><div class="process__step-icon">🌿</div><div class="process__step-num">01</div><h3>Chọn Nguyên Liệu</h3><p>Tuyển chọn kỹ lưỡng hơn 60 loại thảo mộc quý từ các vùng dược liệu nổi tiếng.</p></div>
+        <div class="process__step reveal-up"><div class="process__step-icon">🔥</div><div class="process__step-num">02</div><h3>Nấu Rượu Nếp</h3><p>Nếp cái hoa vàng được nấu thủ công, chưng cất giữ độ tinh khiết tối đa.</p></div>
+        <div class="process__step reveal-up"><div class="process__step-icon">🏺</div><div class="process__step-num">03</div><h3>Ngâm Ủ Thảo Mộc</h3><p>Phối trộn theo tỷ lệ vàng, ngâm ủ trong rượu nếp qua nhiều tháng.</p></div>
+        <div class="process__step reveal-up"><div class="process__step-icon">⛏️</div><div class="process__step-num">04</div><h3>Hạ Thổ</h3><p>Chôn dưới lòng đất tối thiểu 6 tháng, hương vị hài hòa tự nhiên.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ingredients -->
+  <section class="ingredients">
+    <div class="container">
+      <div class="ingredients__inner">
+        <div class="ingredients__content reveal-left">
+          <p class="section-tag">Thành phần</p>
+          <h2 class="section-title">60+ Vị Thảo Mộc<br>Quý Hiếm</h2>
+          <div class="ingredients__list">
+            <div class="ingredient-tag">🫚 Đảng Sâm</div>
+            <div class="ingredient-tag">🌸 Dâm Dương Hoắc</div>
+            <div class="ingredient-tag">🔴 Kỷ Tử</div>
+            <div class="ingredient-tag">🌿 Ba Kích</div>
+            <div class="ingredient-tag">🍂 Đương Quy</div>
+            <div class="ingredient-tag">🌰 Ngưu Tất</div>
+            <div class="ingredient-tag">🌱 Hoàng Kỳ</div>
+            <div class="ingredient-tag">🍎 Táo Tàu</div>
+            <div class="ingredient-tag">🍌 Chuối Hột</div>
+            <div class="ingredient-tag">🎋 Ngọc Trúc</div>
+            <div class="ingredient-tag">🌾 Sinh Địa</div>
+            <div class="ingredient-tag">🌳 Ngũ Gia Bì</div>
+          </div>
+          <p class="ingredients__note">...và hơn 48 vị thảo mộc khác được phối trộn theo bí truyền</p>
+        </div>
+        <div class="ingredients__visual reveal-right">
+          <div class="ingredients__art">
+            <div class="ingredients__art-ring">
+              <span style="--i:0">🫚</span><span style="--i:1">🌸</span><span style="--i:2">🔴</span>
+              <span style="--i:3">🌿</span><span style="--i:4">🍂</span><span style="--i:5">⭐</span>
+              <span style="--i:6">🍎</span><span style="--i:7">🌰</span>
+            </div>
+            <div class="ingredients__art-center">60+<br><small>vị thuốc</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <p class="section-tag text-center">Khách hàng nói gì</p>
+      <h2 class="section-title text-center">Trải Nghiệm Thực Tế</h2>
+      <div class="testimonials__grid">
+        <div class="testimonial-card reveal-up">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p>"Uống rất êm, không hề đau đầu. Mình đã mua tặng đối tác kinh doanh và ai cũng khen. Đóng chai đẹp, sang trọng."</p>
+          <div class="testimonial-card__author"><div class="testimonial-card__avatar">AH</div><div><strong>Anh Hùng</strong><br><span>Doanh nhân, TP.HCM</span></div></div>
+        </div>
+        <div class="testimonial-card reveal-up">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p>"Bố mình rất khó tính chuyện rượu, nhưng thử Bách Hoa Tửu xong là mê luôn. Giờ Tết nào cũng đặt mấy thùng."</p>
+          <div class="testimonial-card__author"><div class="testimonial-card__avatar">TL</div><div><strong>Chị Lan</strong><br><span>Kế toán, Hà Nội</span></div></div>
+        </div>
+        <div class="testimonial-card reveal-up">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p>"Hương thảo mộc dễ chịu, vị ngọt thanh tự nhiên. Uống xong người ấm, dễ ngủ. Sẽ ủng hộ lâu dài!"</p>
+          <div class="testimonial-card__author"><div class="testimonial-card__avatar">MĐ</div><div><strong>Anh Đức</strong><br><span>Kỹ sư, Đà Nẵng</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta">
+    <div class="container final-cta__inner">
+      <h2>Sẵn sàng thưởng thức<br>tinh hoa thảo mộc?</h2>
+      <p>Liên hệ ngay để được tư vấn và đặt hàng. Freeship nội thành TP.HCM cho đơn từ 2 triệu.</p>
+      <div class="final-cta__actions">
+        <a href="tel:0923177091" class="btn btn--primary btn--lg">📞 Gọi: 092 3177 091</a>
+        <a href="https://zalo.me/0923177091" class="btn btn--ghost btn--lg" target="_blank" rel="noopener">💬 Chat Zalo</a>
+        <a href="https://m.me/ruoubachhoatuusauphuoc" class="btn btn--ghost btn--lg" target="_blank" rel="noopener">💬 Messenger</a>
+      </div>
+      <div class="final-cta__guarantees">
+        <span>✅ Cam kết chính hãng</span><span>🚚 Giao hàng toàn quốc</span><span>🔄 Đổi trả nếu lỗi</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand"><span class="navbar__logo-icon">🌿</span> <strong>Bách Hoa Tửu</strong><p>Công Ty TNHH Thương Mại Tinh Hoa Tửu</p></div>
+      <div class="footer__links"><h4>Liên hệ</h4><p>Hotline: <a href="tel:0923177091">092 3177 091</a></p><p>Email: ruoubachhoatuu.com@gmail.com</p></div>
+      <div class="footer__links"><h4>Chính sách</h4><p>Giao hàng toàn quốc</p><p>Freeship nội thành HCM từ 2tr</p><p>Cam kết chính hãng 100%</p></div>
+    </div>
+    <div class="footer__bottom">
+      <p>⚠️ Sản phẩm không dành cho người dưới 18 tuổi. Uống có trách nhiệm.</p>
+      <p>© 2026 Bách Hoa Tửu. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
