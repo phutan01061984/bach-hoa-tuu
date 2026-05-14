@@ -225,20 +225,11 @@ a:hover{color:var(--gold-light)}
   .final-cta__guarantees{flex-direction:column;align-items:center;gap:12px}
 }
 
-/* ===== Hero Bottle (CSS Art) ===== */
+/* ===== Hero Product Image ===== */
 .hero__visual{position:relative;display:flex;justify-content:center;align-items:center;min-height:400px}
 .hero__bottle{position:relative;animation:float 4s ease-in-out infinite}
-.hero__bottle-glow{position:absolute;width:300px;height:300px;top:50%;left:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(212,168,67,.15),transparent 70%);border-radius:50%;filter:blur(30px)}
-.hero__bottle-shape{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center}
-.hero__bottle-cap{width:28px;height:16px;background:linear-gradient(135deg,#8B7355,#6B5A42);border-radius:4px 4px 0 0;border:1px solid rgba(212,168,67,.3)}
-.hero__bottle-neck{width:24px;height:40px;background:linear-gradient(180deg,rgba(200,139,58,.4),rgba(200,139,58,.6));border-left:1px solid rgba(212,168,67,.2);border-right:1px solid rgba(212,168,67,.2)}
-.hero__bottle-body{width:140px;height:220px;background:linear-gradient(135deg,rgba(200,139,58,.3),rgba(180,120,40,.5));border:1px solid rgba(212,168,67,.3);border-radius:12px 12px 16px 16px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;box-shadow:inset 0 0 40px rgba(212,168,67,.1),0 20px 60px rgba(0,0,0,.4)}
-.hero__bottle-liquid{position:absolute;bottom:0;left:0;right:0;height:70%;background:linear-gradient(180deg,rgba(212,168,67,.2),rgba(180,120,40,.4));border-radius:0 0 15px 15px}
-.hero__bottle-label{position:relative;z-index:2;text-align:center;background:rgba(245,240,232,.08);backdrop-filter:blur(4px);padding:16px 12px;border-radius:8px;border:1px solid rgba(212,168,67,.2)}
-.hero__bottle-label-top{display:block;font-size:1.4rem;color:var(--gold);margin-bottom:4px}
-.hero__bottle-label-name{display:block;font-family:var(--font-heading);font-size:.85rem;font-weight:700;color:var(--gold-light);letter-spacing:2px}
-.hero__bottle-label-sub{display:block;font-size:.6rem;color:var(--text-muted);margin-top:2px}
-.hero__bottle-label-vol{display:block;font-size:.55rem;color:var(--text-muted);margin-top:6px;letter-spacing:1px}
+.hero__bottle-glow{position:absolute;width:400px;height:400px;top:50%;left:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(212,168,67,.18),transparent 70%);border-radius:50%;filter:blur(40px)}
+.hero__product-img{position:relative;z-index:2;max-height:480px;width:auto;object-fit:contain;filter:drop-shadow(0 20px 60px rgba(212,168,67,.25));border-radius:var(--radius)}
 .hero__herb{position:absolute;font-size:1.5rem;animation:float 3s ease-in-out infinite;z-index:3}
 .hero__herb--1{top:10%;left:0;animation-delay:0s}
 .hero__herb--2{top:5%;right:10%;animation-delay:.5s}
@@ -247,35 +238,39 @@ a:hover{color:var(--gold-light)}
 .hero__herb--5{top:40%;right:-5%;animation-delay:2s}
 .hero__herb--6{bottom:5%;left:15%;animation-delay:2.5s}
 
-/* ===== Story Art ===== */
+/* ===== Story Art (Real Photo) ===== */
 .story__visual{display:flex;align-items:center;justify-content:center}
-.story__art{width:100%;max-width:400px;aspect-ratio:1;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-xl);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;position:relative;overflow:hidden;box-shadow:var(--shadow)}
-.story__art::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 30%,rgba(212,168,67,.08),transparent 60%)}
-.story__art-jar{font-size:5rem;filter:drop-shadow(0 4px 20px rgba(212,168,67,.2))}
-.story__art-herbs{display:flex;gap:12px;font-size:1.5rem}
-.story__art-herbs span{animation:float 3s ease-in-out infinite;animation-delay:calc(var(--i,0) * .3s)}
-.story__art-text{font-family:var(--font-heading);color:var(--gold);font-size:1.1rem;text-align:center;font-style:italic}
+.story__art{width:100%;max-width:450px;border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow);position:relative}
+.story__art--photo{aspect-ratio:auto}
+.story__photo{width:100%;height:auto;object-fit:cover;display:block;transition:transform .6s ease}
+.story__art:hover .story__photo{transform:scale(1.03)}
+.story__art-overlay{position:absolute;bottom:0;left:0;right:0;padding:24px;background:linear-gradient(transparent,rgba(12,10,8,.85));display:flex;align-items:flex-end}
+.story__art-text{font-family:var(--font-heading);color:var(--gold);font-size:1.2rem;text-align:left;font-style:italic;text-shadow:0 2px 8px rgba(0,0,0,.5)}
 
-/* ===== Product Bottles (CSS) ===== */
-.product-card__bottle{display:flex;flex-direction:column;align-items:center;gap:4px}
-.pcb__cap{width:20px;height:10px;background:linear-gradient(135deg,#8B7355,#6B5A42);border-radius:3px 3px 0 0}
-.pcb__neck{width:16px;height:24px;background:linear-gradient(180deg,rgba(200,139,58,.4),rgba(200,139,58,.6));border-left:1px solid rgba(212,168,67,.2);border-right:1px solid rgba(212,168,67,.2)}
-.pcb__body{width:90px;height:140px;background:linear-gradient(135deg,rgba(200,139,58,.25),rgba(180,120,40,.45));border:1px solid rgba(212,168,67,.25);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;box-shadow:inset 0 0 20px rgba(212,168,67,.08),0 8px 30px rgba(0,0,0,.3)}
-.product-card__bottle--round .pcb__body{border-radius:50% 50% 45% 45%}
-.product-card__bottle--square .pcb__body{border-radius:4px 4px 8px 8px}
-.pcb__body span{font-size:1.1rem;color:var(--gold)}
-.pcb__body small{font-size:.65rem;color:var(--text-muted);letter-spacing:1px}
-.product-card__bottle--pack{display:grid;grid-template-columns:1fr 1fr;gap:8px;place-items:center}
-.pcb__mini{font-size:2.5rem;filter:drop-shadow(0 2px 8px rgba(212,168,67,.15))}
-.product-card__bottle--pack small{grid-column:span 2;font-size:.75rem;color:var(--text-muted)}
+/* ===== Product Card Real Images ===== */
+.product-card__real-img{max-height:220px;width:auto;object-fit:contain;filter:drop-shadow(0 8px 24px rgba(0,0,0,.3));transition:transform .4s ease}
+.product-card:hover .product-card__real-img{transform:scale(1.06) rotate(1deg)}
 
-/* ===== Ingredients Ring ===== */
+/* ===== Ingredients Ring + Product Image ===== */
 .ingredients__visual{display:flex;align-items:center;justify-content:center}
-.ingredients__art{position:relative;width:300px;height:300px}
+.ingredients__art{position:relative;width:350px;height:350px}
+.ingredients__art--photo{display:flex;align-items:center;justify-content:center}
+.ingredients__product-img{position:relative;z-index:2;max-height:280px;width:auto;object-fit:contain;filter:drop-shadow(0 12px 40px rgba(212,168,67,.2))}
 .ingredients__art-ring{position:absolute;inset:0}
-.ingredients__art-ring span{position:absolute;font-size:2rem;top:50%;left:50%;transform:rotate(calc(var(--i)*45deg)) translateY(-120px);animation:float 3s ease-in-out infinite;animation-delay:calc(var(--i)*.4s)}
-.ingredients__art-center{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:var(--font-heading);font-size:3rem;font-weight:700;color:var(--gold);text-align:center;line-height:1}
-.ingredients__art-center small{font-size:.8rem;color:var(--text-muted);font-weight:400;display:block;margin-top:4px}
+.ingredients__art-ring span{position:absolute;font-size:2rem;top:50%;left:50%;transform:rotate(calc(var(--i)*45deg)) translateY(-140px);animation:float 3s ease-in-out infinite;animation-delay:calc(var(--i)*.4s)}
+
+/* ===== Photo Gallery ===== */
+.gallery{padding:100px 0;background:var(--bg-section-alt)}
+.gallery__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:48px}
+@media(min-width:900px){.gallery__grid{grid-template-columns:repeat(4,1fr);gap:20px}}
+.gallery__item{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:1;cursor:pointer;border:1px solid var(--border);transition:var(--transition)}
+.gallery__item:hover{border-color:var(--border-hover);transform:translateY(-4px);box-shadow:var(--shadow-gold)}
+.gallery__item--wide{grid-column:span 2;aspect-ratio:2/1}
+.gallery__item img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.gallery__item:hover img{transform:scale(1.08)}
+.gallery__overlay{position:absolute;inset:0;background:linear-gradient(transparent 50%,rgba(12,10,8,.8));display:flex;align-items:flex-end;padding:16px;opacity:0;transition:var(--transition)}
+.gallery__item:hover .gallery__overlay{opacity:1}
+.gallery__overlay span{color:var(--gold-light);font-size:.85rem;font-weight:500;text-shadow:0 1px 4px rgba(0,0,0,.5)}
 
 /* ===== Process Icons ===== */
 .process__step-icon{font-size:2rem;margin-bottom:8px}
