@@ -206,15 +206,43 @@ a:hover{color:var(--gold-light)}
 .fb-section__stat-icon{font-size:1.4rem}
 .fb-section__stat span:last-child{color:var(--text-secondary);font-size:.9rem}
 .fb-section__widget{display:flex;justify-content:center}
-.fb-section__box{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-xl);padding:16px;box-shadow:var(--shadow);overflow:hidden;transition:var(--transition)}
-.fb-section__box:hover{border-color:var(--border-hover);box-shadow:var(--shadow-gold)}
-.fb-section__box iframe{border-radius:12px;display:block}
-@media(max-width:600px){.fb-section__box iframe{width:100%;max-width:300px}}
+
+/* ===== Facebook Card Widget ===== */
+.fb-card{display:block;width:360px;max-width:100%;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow);transition:var(--transition);text-decoration:none;color:var(--text-primary)}
+.fb-card:hover{border-color:var(--border-hover);box-shadow:var(--shadow-gold);transform:translateY(-4px);color:var(--text-primary)}
+.fb-card__cover{position:relative;height:120px;overflow:hidden}
+.fb-card__cover-img{width:100%;height:100%;object-fit:cover}
+.fb-card__cover-overlay{position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(26,22,18,.8))}
+.fb-card__body{padding:20px}
+.fb-card__profile{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.fb-card__avatar{width:52px;height:52px;border-radius:50%;overflow:hidden;border:3px solid var(--gold);flex-shrink:0;background:var(--bg-dark)}
+.fb-card__avatar img{width:100%;height:100%;object-fit:cover}
+.fb-card__avatar--sm{width:40px;height:40px;border-width:2px}
+.fb-card__info{display:flex;flex-direction:column;gap:2px}
+.fb-card__name{font-family:var(--font-heading);font-size:1.1rem;font-weight:600;color:var(--text-primary)}
+.fb-card__meta{font-size:.8rem;color:var(--text-muted)}
+.fb-card__actions{display:flex;gap:8px;margin-bottom:16px}
+.fb-card__like-btn,.fb-card__msg-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:var(--radius-sm);font-size:.85rem;font-weight:600;cursor:pointer;transition:var(--transition)}
+.fb-card__like-btn{background:linear-gradient(135deg,#1877F2,#0D65D9);color:#fff}
+.fb-card__like-btn svg{fill:#fff}
+.fb-card:hover .fb-card__like-btn{background:linear-gradient(135deg,#1A8CFF,#1877F2);box-shadow:0 4px 16px rgba(24,119,242,.3)}
+.fb-card__like-btn--sm{padding:6px 12px;font-size:.8rem}
+.fb-card__msg-btn{background:rgba(255,255,255,.08);color:var(--text-secondary);border:1px solid var(--border)}
+.fb-card__msg-btn svg{stroke:var(--text-secondary)}
+.fb-card:hover .fb-card__msg-btn{background:rgba(255,255,255,.12);border-color:var(--border-hover)}
+.fb-card__posts{display:flex;flex-direction:column;gap:10px;margin-bottom:16px;padding-top:16px;border-top:1px solid var(--border)}
+.fb-card__post{display:flex;align-items:flex-start;gap:10px;font-size:.85rem;color:var(--text-secondary);line-height:1.5}
+.fb-card__post-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:6px}
+.fb-card__footer{display:flex;align-items:center;justify-content:center;gap:8px;padding:14px;margin:-20px -20px 0;background:rgba(24,119,242,.08);border-top:1px solid rgba(24,119,242,.15);color:#4599FF;font-size:.9rem;font-weight:600;transition:var(--transition)}
+.fb-card__footer svg{fill:#4599FF}
+.fb-card:hover .fb-card__footer{background:rgba(24,119,242,.15);color:#6BB3FF}
+.fb-card--mini{width:100%;border-radius:var(--radius)}
+.fb-card--mini .fb-card__body{padding:14px}
+.fb-card--mini .fb-card__profile{margin-bottom:12px}
+.fb-card--mini .fb-card__actions{margin-bottom:0}
 
 /* ===== Footer FB Widget ===== */
 .footer__fb h4{color:var(--gold);font-size:.9rem;margin-bottom:12px;text-transform:uppercase;letter-spacing:1px}
-.footer__fb iframe{border-radius:12px;max-width:100%}
-@media(max-width:600px){.footer__fb iframe{width:100%;height:300px}}
 
 /* ===== Footer ===== */
 .footer{border-top:1px solid var(--border);padding:60px 0 0}
