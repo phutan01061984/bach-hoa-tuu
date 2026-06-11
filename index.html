@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bách Hoa Tửu – Tinh Hoa Thảo Mộc Việt Nam</title>
-  <meta name="description" content="Rượu Bách Hoa Tửu – Kết tinh từ hơn 60 loại thảo mộc quý hiếm. Hương thơm dịu, vị êm, không đau đầu. Đặt hàng ngay!">
-  <meta property="og:title" content="Bách Hoa Tửu – Tinh Hoa Thảo Mộc Việt Nam">
-  <meta property="og:description" content="Hơn 60 vị thảo mộc quý. Hương thơm dịu, vị êm, không đau đầu.">
+  <title>Bách Hoa Tửu Sáu Phước – Tặng 6 ly khi mua thùng | 092 3177 091</title>
+  <meta name="description" content="Rượu Bách Hoa Tửu Sáu Phước – 60+ vị thảo mộc quý, uống không đau đầu. Mua thùng 5 chai tặng 6 ly thủy tinh cao cấp. Freeship HCM ≥ 2tr. Hotline 092 3177 091.">
+  <meta property="og:title" content="Bách Hoa Tửu – Tặng 6 ly khi mua thùng 5 chai">
+  <meta property="og:description" content="60+ vị thảo mộc quý · Uống không đau đầu · Tặng 6 ly thủy tinh khi mua thùng · Freeship HCM ≥ 2tr">
+  <meta property="og:image" content="images/hero-bottle.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -26,25 +27,38 @@
     </div>
   </div>
 
-  <!-- Floating CTA -->
-  <a href="https://zalo.me/0923177091" id="floating-cta" class="floating-cta" target="_blank" rel="noopener">
+  <!-- Alert Bar (replaces nav for F&B per LadiPage rule — reinforces CTA, no distraction) -->
+  <div class="alert-bar" id="alert-bar">
+    <div class="container alert-bar__inner">
+      <span class="alert-bar__pulse">🎁</span>
+      <span class="alert-bar__text"><strong>Ưu đãi tháng này:</strong> Mua thùng 5 chai · <strong>Tặng 6 ly thủy tinh cao cấp</strong> + Freeship nội thành HCM đơn từ 2tr</span>
+      <a href="#order" class="alert-bar__cta">Đặt mua ngay →</a>
+    </div>
+  </div>
+
+  <!-- Floating CTA — unified verb -->
+  <a href="#order" id="floating-cta" class="floating-cta">
     <span class="floating-cta__pulse"></span>
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-    <span class="floating-cta__text">Đặt hàng ngay</span>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+    <span class="floating-cta__text">Đặt mua ngay</span>
   </a>
 
-  <!-- Nav -->
+  <!-- Notify popup — JS-driven "X vừa đặt" social proof -->
+  <div class="notify-pop" id="notify-pop" aria-hidden="true">
+    <span class="notify-pop__icon">✅</span>
+    <div class="notify-pop__body">
+      <strong class="notify-pop__name"></strong>
+      <span class="notify-pop__meta"></span>
+    </div>
+    <button class="notify-pop__close" aria-label="Đóng">×</button>
+  </div>
+
+  <!-- Nav — minimalist (F&B: nav causes distraction, keep only logo + unified CTA) -->
   <nav id="navbar" class="navbar">
     <div class="container navbar__inner">
       <a href="#" class="navbar__logo"><span class="navbar__logo-icon">🌿</span><span>Bách Hoa Tửu</span></a>
-      <ul class="navbar__links" id="nav-links">
-        <li><a href="#story">Câu chuyện</a></li>
-        <li><a href="#products">Sản phẩm</a></li>
-        <li><a href="#process">Quy trình</a></li>
-        <li><a href="#testimonials">Đánh giá</a></li>
-      </ul>
-      <a href="tel:0923177091" class="btn btn--primary btn--sm navbar__cta">Gọi ngay</a>
-      <button id="menu-toggle" class="navbar__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <a href="tel:0923177091" class="navbar__phone" aria-label="Hotline">📞 092 3177 091</a>
+      <a href="#order" class="btn btn--primary btn--sm navbar__cta">Đặt mua ngay</a>
     </div>
   </nav>
 
@@ -53,15 +67,16 @@
     <div class="hero__particles" id="particles"></div>
     <div class="container hero__inner">
       <div class="hero__content">
-        <p class="hero__tag">✦ Tinh hoa thảo mộc Việt</p>
+        <p class="hero__tag">✦ Tinh hoa thảo mộc Việt · Sáu Phước từ 2019</p>
         <h1 class="hero__title">Bách Hoa<br>Tửu</h1>
-        <p class="hero__subtitle">Kết tinh từ <strong>hơn 60 vị thảo mộc quý</strong>, ngâm ủ theo bí truyền cổ phương. Hương thơm dịu dàng, vị êm mượt, uống không đau đầu.</p>
+        <p class="hero__offer"><span class="hero__offer-flag">🎁 ƯU ĐÃI</span> Mua thùng 5 chai <strong>tặng 6 ly thủy tinh cao cấp</strong></p>
+        <p class="hero__subtitle">Kết tinh từ <strong>hơn 60 vị thảo mộc quý</strong>, ngâm ủ theo bí truyền cổ phương. Hương thơm dịu dàng, vị êm mượt, <strong>uống không đau đầu</strong>.</p>
         <div class="hero__actions">
-          <a href="tel:0923177091" class="btn btn--primary btn--lg" id="hero-cta">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-            Đặt hàng: 092 3177 091
+          <a href="#order" class="btn btn--primary btn--lg" id="hero-cta">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4m-3 8v8H5V5h11"/></svg>
+            Đặt mua ngay
           </a>
-          <a href="#products" class="btn btn--ghost btn--lg">Xem sản phẩm ↓</a>
+          <a href="tel:0923177091" class="btn btn--ghost btn--lg">📞 092 3177 091</a>
         </div>
         <div class="hero__trust">
           <div class="hero__trust-item">
@@ -70,13 +85,13 @@
           </div>
           <div class="hero__trust-divider"></div>
           <div class="hero__trust-item">
-            <span class="hero__trust-number" data-count="5000">0</span>+
-            <span class="hero__trust-label">Khách hài lòng</span>
+            <span class="hero__trust-number" data-count="10000">0</span>+
+            <span class="hero__trust-label">Chai đã giao</span>
           </div>
           <div class="hero__trust-divider"></div>
           <div class="hero__trust-item">
-            <span class="hero__trust-number" data-count="100">0</span>%
-            <span class="hero__trust-label">Tự nhiên</span>
+            <span class="hero__trust-number">4.9</span>/5
+            <span class="hero__trust-label">Đánh giá FB</span>
           </div>
         </div>
       </div>
@@ -169,8 +184,12 @@
             <h3>Bách Hoa Tửu — Chai Tròn</h3>
             <p class="product-card__desc">Thiết kế cổ điển, sang trọng. Phù hợp làm quà biếu tặng.</p>
             <div class="product-card__meta"><span class="product-card__volume">500ml</span><span class="product-card__abv">22% vol</span></div>
-            <div class="product-card__price"><span class="product-card__price-current">220.000₫</span></div>
-            <a href="tel:0923177091" class="btn btn--primary btn--block">Đặt mua ngay</a>
+            <div class="product-card__price">
+              <span class="product-card__price-old">250.000₫</span>
+              <span class="product-card__price-current">220.000₫</span>
+              <span class="product-card__price-save">−30K</span>
+            </div>
+            <a href="#order" class="btn btn--primary btn--block" data-product="Chai Tròn 500ml">Đặt mua ngay</a>
           </div>
         </div>
         <div class="product-card product-card--featured reveal-up">
@@ -187,8 +206,12 @@
             <h3>Bách Hoa Tửu — Chai Vuông</h3>
             <p class="product-card__desc">Phiên bản cao cấp, hương vị đậm đà, tặng kèm hộp quà.</p>
             <div class="product-card__meta"><span class="product-card__volume">500ml</span><span class="product-card__abv">22% vol</span></div>
-            <div class="product-card__price"><span class="product-card__price-current">250.000₫</span></div>
-            <a href="tel:0923177091" class="btn btn--primary btn--block">Đặt mua ngay</a>
+            <div class="product-card__price">
+              <span class="product-card__price-old">290.000₫</span>
+              <span class="product-card__price-current">250.000₫</span>
+              <span class="product-card__price-save">−40K</span>
+            </div>
+            <a href="#order" class="btn btn--primary btn--block" data-product="Chai Vuông 500ml Premium">Đặt mua ngay</a>
           </div>
         </div>
         <div class="product-card reveal-up">
@@ -206,8 +229,12 @@
             <h3>Bách Hoa Tửu — Lốc 4 Chai</h3>
             <p class="product-card__desc">Gói tiết kiệm 4 chai nhựa 250ml, tiện lợi cho gia đình.</p>
             <div class="product-card__meta"><span class="product-card__volume">4 × 250ml</span><span class="product-card__abv">22% vol</span></div>
-            <div class="product-card__price"><span class="product-card__price-current">300.000₫</span></div>
-            <a href="tel:0923177091" class="btn btn--primary btn--block">Đặt mua ngay</a>
+            <div class="product-card__price">
+              <span class="product-card__price-old">360.000₫</span>
+              <span class="product-card__price-current">300.000₫</span>
+              <span class="product-card__price-save">−60K</span>
+            </div>
+            <a href="#order" class="btn btn--primary btn--block" data-product="Lốc 4 chai nhựa 250ml">Đặt mua ngay</a>
           </div>
         </div>
       </div>
@@ -292,6 +319,36 @@
     </div>
   </section>
 
+  <!-- Cam kết & Chính sách bán hàng (required* per LadiPage F&B guide) -->
+  <section class="commits">
+    <div class="container">
+      <p class="section-tag text-center">Cam kết bán hàng</p>
+      <h2 class="section-title text-center">Đặt Mua An Tâm — Sáu Phước</h2>
+      <div class="commits__grid">
+        <div class="commit-card reveal-up">
+          <div class="commit-card__icon">🛡️</div>
+          <h3>100% Chính hãng</h3>
+          <p>Sản xuất trực tiếp tại xưởng Sáu Phước. Có GPKD &amp; chứng nhận VSATTP — hoàn tiền nếu hàng giả.</p>
+        </div>
+        <div class="commit-card reveal-up">
+          <div class="commit-card__icon">🚚</div>
+          <h3>Freeship HCM ≥ 2tr</h3>
+          <p>Giao hỏa tốc nội thành TP.HCM trong 2h. Giao toàn quốc 2–4 ngày qua J&amp;T / Viettel Post.</p>
+        </div>
+        <div class="commit-card reveal-up">
+          <div class="commit-card__icon">🔄</div>
+          <h3>Đổi trả 7 ngày</h3>
+          <p>Sản phẩm lỗi do nhà sản xuất hoặc hư hỏng trong vận chuyển — đổi mới hoặc hoàn 100%.</p>
+        </div>
+        <div class="commit-card reveal-up">
+          <div class="commit-card__icon">🎁</div>
+          <h3>Ly tặng kèm thùng</h3>
+          <p>Mua thùng 5 chai tròn/vuông — tặng kèm 6 ly thủy tinh cao cấp khắc logo Sáu Phước.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Testimonials -->
   <section id="testimonials" class="testimonials">
     <div class="container">
@@ -357,18 +414,77 @@
     </div>
   </section>
 
+  <!-- Order Form — Conversion section (LadiPage *required) -->
+  <section class="order-form" id="order">
+    <div class="container order-form__inner">
+      <div class="order-form__side reveal-left">
+        <p class="section-tag">Đặt mua trực tiếp</p>
+        <h2 class="section-title">Chỉ Còn <span class="order-form__count">12</span> Suất Ưu Đãi Hôm Nay</h2>
+        <p class="order-form__intro">Để lại thông tin, nhân viên Sáu Phước gọi xác nhận đơn trong <strong>15 phút</strong>. Không trả tiền trước, kiểm hàng nhận tiền.</p>
+        <ul class="order-form__benefits">
+          <li>✅ Tặng 6 ly thủy tinh cao cấp khi mua thùng 5 chai</li>
+          <li>✅ Freeship hỏa tốc nội thành HCM đơn từ 2tr</li>
+          <li>✅ COD toàn quốc — kiểm hàng nhận tiền</li>
+          <li>✅ Đổi trả 7 ngày nếu hàng lỗi</li>
+        </ul>
+        <div class="order-form__countdown" aria-live="polite">
+          <span>Ưu đãi kết thúc sau:</span>
+          <div class="countdown" id="countdown">
+            <span class="countdown__cell"><b id="cd-h">23</b><small>giờ</small></span>
+            <span class="countdown__cell"><b id="cd-m">59</b><small>phút</small></span>
+            <span class="countdown__cell"><b id="cd-s">59</b><small>giây</small></span>
+          </div>
+        </div>
+      </div>
+      <form class="order-form__form reveal-right" id="order-form" novalidate>
+        <h3 class="order-form__form-title">Nhận tư vấn &amp; đặt mua</h3>
+        <label class="order-form__field">
+          <span>Họ tên</span>
+          <input type="text" name="name" required placeholder="VD: Nguyễn Văn A" autocomplete="name">
+        </label>
+        <label class="order-form__field">
+          <span>Số điện thoại</span>
+          <input type="tel" name="phone" required placeholder="VD: 0912 345 678" pattern="[0-9 +]{9,15}" autocomplete="tel">
+        </label>
+        <label class="order-form__field">
+          <span>Chọn sản phẩm</span>
+          <select name="product" required>
+            <option value="">— Chọn sản phẩm —</option>
+            <option>Chai Tròn 500ml — 220.000₫</option>
+            <option>Chai Vuông 500ml Premium — 250.000₫</option>
+            <option>Lốc 4 chai nhựa 250ml — 300.000₫</option>
+            <option>Thùng 5 chai tròn (tặng 6 ly) — 1.050.000₫</option>
+            <option>Thùng 5 chai vuông (tặng 6 ly) — 1.200.000₫</option>
+            <option>Tư vấn thêm</option>
+          </select>
+        </label>
+        <label class="order-form__field">
+          <span>Ghi chú <small>(tuỳ chọn)</small></span>
+          <textarea name="note" rows="2" placeholder="Số lượng, địa chỉ, thời gian giao mong muốn..."></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary btn--lg btn--block">Đặt mua ngay</button>
+        <p class="order-form__caption">Nhân viên Sáu Phước gọi xác nhận trong 15 phút. Thông tin được bảo mật tuyệt đối.</p>
+        <div class="order-form__alt">
+          <span>Hoặc đặt nhanh qua:</span>
+          <a href="tel:0923177091">📞 Hotline</a>
+          <a href="https://zalo.me/0923177091" target="_blank" rel="noopener">💬 Zalo</a>
+          <a href="https://m.me/ruoubachhoatuusauphuoc" target="_blank" rel="noopener">💬 Messenger</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
   <!-- Final CTA -->
   <section class="final-cta">
     <div class="container final-cta__inner">
       <h2>Sẵn sàng thưởng thức<br>tinh hoa thảo mộc?</h2>
-      <p>Liên hệ ngay để được tư vấn và đặt hàng. Freeship nội thành TP.HCM cho đơn từ 2 triệu.</p>
+      <p>Để lại số điện thoại — nhân viên Sáu Phước gọi xác nhận trong 15 phút. Freeship nội thành HCM từ 2tr.</p>
       <div class="final-cta__actions">
-        <a href="tel:0923177091" class="btn btn--primary btn--lg">📞 Gọi: 092 3177 091</a>
-        <a href="https://zalo.me/0923177091" class="btn btn--ghost btn--lg" target="_blank" rel="noopener">💬 Chat Zalo</a>
-        <a href="https://m.me/ruoubachhoatuusauphuoc" class="btn btn--ghost btn--lg" target="_blank" rel="noopener">💬 Messenger</a>
+        <a href="#order" class="btn btn--primary btn--lg">Đặt mua ngay</a>
+        <a href="tel:0923177091" class="btn btn--ghost btn--lg">📞 092 3177 091</a>
       </div>
       <div class="final-cta__guarantees">
-        <span>✅ Cam kết chính hãng</span><span>🚚 Giao hàng toàn quốc</span><span>🔄 Đổi trả nếu lỗi</span>
+        <span>✅ 100% chính hãng</span><span>🚚 Giao toàn quốc</span><span>🔄 Đổi trả 7 ngày</span><span>🎁 Tặng ly khi mua thùng</span>
       </div>
     </div>
   </section>
