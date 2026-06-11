@@ -195,7 +195,7 @@ window.imgFail = function (img) {
         width: size + 'px',
         height: size + 'px',
         borderRadius: '50%',
-        background: `rgba(212,168,67,${Math.random() * .3 + .05})`,
+        background: `rgba(184,134,45,${Math.random() * .25 + .15})`,
         left: Math.random() * 100 + '%',
         top: Math.random() * 100 + '%',
         animation: `float ${3 + Math.random() * 4}s ease-in-out infinite`,
